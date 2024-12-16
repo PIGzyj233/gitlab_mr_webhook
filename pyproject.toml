@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "gitlab-lsmr-webhook"
+version = "0.1.0"
+description = "用于做ls仓库的mr webhook"
+authors = ["PIGzyj233 <3233845179@qq.com>"]
+readme = "README.md"
+package-mode = false
+packages = [{include = "src"}]
+
+#使用清华源
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.110.0"
+uvicorn = "^0.27.1"
+requests = "^2.31.0"
+python-dotenv = "^1.0.1"
+pydantic = "^2.6.3"
+pydantic-settings = "^2.6.1"
+tomli = "^2.2.1"
+apscheduler = "^3.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

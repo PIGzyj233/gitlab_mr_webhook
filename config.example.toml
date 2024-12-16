@@ -1,0 +1,25 @@
+[gitlab]
+api_url = "your_gitlab_api_url"
+url = "your_gitlab_url"
+access_token = "your_gitlab_access_token"
+webhook_secret = "your_gitlab_webhook_secret"
+project_id = 110
+
+[wechat]
+bot_key = "your_wechat_bot_key"
+
+[server]
+host = "0.0.0.0"
+port = 8000
+workers = 2
+
+[log]
+level = "info"  # debug, info, warning, error
+max_size = 10485760  # 10MB in bytes
+backup_count = 5
+
+[app]
+debug = false
+
+[branches_regex]
+versions = ["^\\d+\\.\\d+\\.\\d+\\.x$", "main"]
