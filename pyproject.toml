@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "gitlab-lsmr-webhook"
 version = "0.1.0"
-description = "用于做ls仓库的mr webhook"
+description = "用于做gitlab仓库的mr webhook"
 authors = ["PIGzyj233 <3233845179@qq.com>"]
 readme = "README.md"
 package-mode = false
